@@ -1,0 +1,581 @@
+{
+  "title" : "General Testing Linear Definition",
+  "description" : "This training definition contains instructions to test basic general functionality of the KYPO-CRP, focused on linear training. It has to be used with the general-testing-definition sandbox.",
+  "prerequisites" : [ ],
+  "outcomes" : [ ],
+  "state" : "UNRELEASED",
+  "show_stepper_bar" : true,
+  "levels" : [ {
+    "title" : "Initial information",
+    "level_type" : "INFO_LEVEL",
+    "order" : 0,
+    "estimated_duration" : 0,
+    "content" : "This is a linear training definition for testing the functionality of KYPO-CRP, specifically the linear training. The tests are performed on a sandbox consisting of a single host machine which it is not necessary to interact with. The levels contain instructions for testing aspects of the KYPO-CRP that cannot be tested automatically. \n\nEach level description contains three sections, each dedicated to actions that need to be performed by a specific user. At the end of the training, a feedback visualization will be displayed. In it, you can find a total amount of points earned by each user, depending on their actions. Check this value against the value stated in the last level."
+  }, {
+    "title" : "Simple level 1",
+    "level_type" : "TRAINING_LEVEL",
+    "order" : 1,
+    "estimated_duration" : 1,
+    "answer" : "kypo",
+    "answer_variable_name" : null,
+    "content" : "## Admin\n * Proceed to the next level using **kypo** as a solution.\n\n## Instructor\n * Proceed to the next level using **kypo** as a solution.\n\n## Trainee\n * Display the solution of the level.\n * Proceed to the next level using **kypo** as a solution.",
+    "solution" : "The solution of this level is **kypo**.",
+    "solution_penalized" : true,
+    "hints" : [ ],
+    "incorrect_answer_limit" : 100,
+    "attachments" : [ ],
+    "max_score" : 100
+  }, {
+    "title" : "Simple level 2",
+    "level_type" : "TRAINING_LEVEL",
+    "order" : 2,
+    "estimated_duration" : 1,
+    "answer" : "kypo",
+    "answer_variable_name" : null,
+    "content" : "## Admin\n * Proceed to the next level using **kypo** as a solution.\n\n## Instructor\n * Display the solution of the level.\n * Proceed to the next level using **kypo** as a solution.\n\n## Trainee\n * Display the solution of the level.\n * Proceed to the next level using **kypo** as a solution.",
+    "solution" : "The solution of this level is **kypo**.",
+    "solution_penalized" : false,
+    "hints" : [ ],
+    "incorrect_answer_limit" : 100,
+    "attachments" : [ ],
+    "max_score" : 100
+  }, {
+    "title" : "Level with hints 1",
+    "level_type" : "TRAINING_LEVEL",
+    "order" : 3,
+    "estimated_duration" : 2,
+    "answer" : "kypo",
+    "answer_variable_name" : null,
+    "content" : "## Admin\n * Display the solution of the level.\n * Proceed to the next level using **kypo** as a solution.\n\n## Instructor\n * Take a hint.\n * Proceed to the next level using **kypo** as a solution.\n\n## Trainee\n * Take a hint.\n * Display the solution of the level.\n * Proceed to the next level using **kypo** as a solution.",
+    "solution" : "The solution of this level is **kypo**.",
+    "solution_penalized" : true,
+    "hints" : [ {
+      "title" : "A new free hint",
+      "content" : "Hint 1",
+      "hint_penalty" : 0,
+      "order" : 0
+    } ],
+    "incorrect_answer_limit" : 100,
+    "attachments" : [ ],
+    "max_score" : 90
+  }, {
+    "title" : "Level with hints 2",
+    "level_type" : "TRAINING_LEVEL",
+    "order" : 4,
+    "estimated_duration" : 2,
+    "answer" : "kypo",
+    "answer_variable_name" : null,
+    "content" : "## Admin\n * Take a hint\n * Proceed to the next level using **kypo** as a solution.\n\n## Instructor\n * Display the solution of the level.\n * Proceed to the next level using **kypo** as a solution.\n\n## Trainee\n * Take a hint.\n * Display the solution of the level.\n * Proceed to the next level using **kypo** as a solution.",
+    "solution" : "The solution of this level is **kypo**.",
+    "solution_penalized" : false,
+    "hints" : [ {
+      "title" : "Hint 1",
+      "content" : "Hint content",
+      "hint_penalty" : 30,
+      "order" : 0
+    } ],
+    "incorrect_answer_limit" : 100,
+    "attachments" : [ ],
+    "max_score" : 50
+  }, {
+    "title" : "Level with hints 3",
+    "level_type" : "TRAINING_LEVEL",
+    "order" : 5,
+    "estimated_duration" : 2,
+    "answer" : "kypo",
+    "answer_variable_name" : null,
+    "content" : "## Admin\n * Take a hint\n * Proceed to the next level using **kypo** as a solution.\n\n## Instructor\n * Proceed to the next level using **kypo** as a solution.\n\n## Trainee\n * Take two hints.\n * Proceed to the next level using **kypo** as a solution.",
+    "solution" : "The solution of this level is **kypo**.",
+    "solution_penalized" : true,
+    "hints" : [ {
+      "title" : "Hint 1",
+      "content" : "Hint content",
+      "hint_penalty" : 20,
+      "order" : 0
+    }, {
+      "title" : "Hint 2",
+      "content" : "Hint content",
+      "hint_penalty" : 40,
+      "order" : 1
+    } ],
+    "incorrect_answer_limit" : 100,
+    "attachments" : [ ],
+    "max_score" : 60
+  }, {
+    "title" : "Level with hints 4",
+    "level_type" : "TRAINING_LEVEL",
+    "order" : 6,
+    "estimated_duration" : 2,
+    "answer" : "kypo",
+    "answer_variable_name" : null,
+    "content" : "## Admin\n * Take a hint\n * Display the solution of the level.\n * Proceed to the next level using **kypo** as a solution.\n\n## Instructor\n * Proceed to the next level using **kypo** as a solution.\n\n## Trainee\n * Take two hints.\n * Display the solution of the level.\n * Proceed to the next level using **kypo** as a solution.",
+    "solution" : "The solution of this level is **kypo**.",
+    "solution_penalized" : true,
+    "hints" : [ {
+      "title" : "Hint 1",
+      "content" : "Hint content",
+      "hint_penalty" : 40,
+      "order" : 0
+    }, {
+      "title" : "Hint 2",
+      "content" : "Hint content",
+      "hint_penalty" : 40,
+      "order" : 1
+    } ],
+    "incorrect_answer_limit" : 100,
+    "attachments" : [ ],
+    "max_score" : 80
+  }, {
+    "title" : "Hard level",
+    "level_type" : "TRAINING_LEVEL",
+    "order" : 7,
+    "estimated_duration" : 1,
+    "answer" : "kypo",
+    "answer_variable_name" : null,
+    "content" : "In this level, the limit for incorrect solutions is set to 2. When exceeded, the solution should be displayed.\n\n## Admin\n * Input one incorrect solution (random text).\n * Proceed to the next level using **kypo** as a solution.\n\n## Instructor\n * Proceed to the next level using **kypo** as a solution.\n\n## Trainee\n * Input two incorrect solutions (random text).\n * Confirm that the solution has been displayed.\n * Proceed to the next level using **kypo** as a solution.",
+    "solution" : "The solution of this level is **kypo**.",
+    "solution_penalized" : true,
+    "hints" : [ ],
+    "incorrect_answer_limit" : 2,
+    "attachments" : [ ],
+    "max_score" : 100
+  }, {
+    "title" : "Questionnaire",
+    "level_type" : "ASSESSMENT_LEVEL",
+    "order" : 8,
+    "estimated_duration" : 3,
+    "questions" : [ {
+      "question_type" : "FFQ",
+      "text" : "Free Form Question",
+      "points" : 0,
+      "penalty" : 0,
+      "order" : 0,
+      "answer_required" : false
+    }, {
+      "question_type" : "FFQ",
+      "text" : "Free Form Question 2 (required solution)",
+      "points" : 0,
+      "penalty" : 0,
+      "order" : 1,
+      "answer_required" : true,
+      "choices" : [ {
+        "text" : "Answer 1",
+        "correct" : true,
+        "order" : 0
+      } ]
+    }, {
+      "question_type" : "MCQ",
+      "text" : " Multiple Choice Question",
+      "points" : 0,
+      "penalty" : 0,
+      "order" : 2,
+      "answer_required" : false,
+      "choices" : [ {
+        "text" : "Choice 1",
+        "correct" : false,
+        "order" : 0
+      }, {
+        "text" : "Choice 2",
+        "correct" : false,
+        "order" : 1
+      }, {
+        "text" : "Choice 3",
+        "correct" : false,
+        "order" : 2
+      } ]
+    }, {
+      "question_type" : "MCQ",
+      "text" : "Multiple Choice Question 2 (required solution)",
+      "points" : 0,
+      "penalty" : 0,
+      "order" : 3,
+      "answer_required" : true,
+      "choices" : [ {
+        "text" : "Choice 1",
+        "correct" : false,
+        "order" : 0
+      }, {
+        "text" : "Choice 2",
+        "correct" : false,
+        "order" : 1
+      } ]
+    }, {
+      "question_type" : "EMI",
+      "text" : "Extended Matching Items 1",
+      "points" : 0,
+      "penalty" : 0,
+      "order" : 4,
+      "answer_required" : false,
+      "extended_matching_options" : [ {
+        "text" : "Option 1",
+        "order" : 0
+      }, {
+        "text" : "Option 2",
+        "order" : 1
+      }, {
+        "text" : "Option 3",
+        "order" : 2
+      }, {
+        "text" : "Option 4",
+        "order" : 3
+      } ],
+      "extended_matching_statements" : [ {
+        "text" : "Statement 1",
+        "order" : 0
+      }, {
+        "text" : "Statement 2",
+        "order" : 1
+      }, {
+        "text" : "Statement 3",
+        "order" : 2
+      }, {
+        "text" : "Statement 4",
+        "order" : 3
+      } ]
+    }, {
+      "question_type" : "EMI",
+      "text" : "Extended Matching Items 2  (required solution)",
+      "points" : 0,
+      "penalty" : 0,
+      "order" : 5,
+      "answer_required" : true,
+      "extended_matching_options" : [ {
+        "text" : "Option 1",
+        "order" : 0
+      }, {
+        "text" : "Option 2",
+        "order" : 1
+      } ],
+      "extended_matching_statements" : [ {
+        "text" : "Statement 1",
+        "order" : 0
+      }, {
+        "text" : "Statement 2",
+        "order" : 1
+      } ]
+    } ],
+    "instructions" : "The instructions for assessment levels can be found only at the [Linear training wiki](https://gitlab.ics.muni.cz/groups/muni-kypo-crp/-/wikis/Testing-KYPO-instance/Linear-Training).",
+    "assessment_type" : "QUESTIONNAIRE"
+  }, {
+    "title" : "Test 1",
+    "level_type" : "ASSESSMENT_LEVEL",
+    "order" : 9,
+    "estimated_duration" : 10,
+    "questions" : [ {
+      "question_type" : "FFQ",
+      "text" : "Free Form 1",
+      "points" : 20,
+      "penalty" : 0,
+      "order" : 0,
+      "answer_required" : true,
+      "choices" : [ {
+        "text" : "kypo",
+        "correct" : true,
+        "order" : 0
+      }, {
+        "text" : "kypo1",
+        "correct" : true,
+        "order" : 1
+      } ]
+    }, {
+      "question_type" : "FFQ",
+      "text" : "Free Form 2",
+      "points" : 0,
+      "penalty" : 20,
+      "order" : 1,
+      "answer_required" : true,
+      "choices" : [ {
+        "text" : "kypo",
+        "correct" : true,
+        "order" : 0
+      } ]
+    }, {
+      "question_type" : "FFQ",
+      "text" : "Free Form 3",
+      "points" : 20,
+      "penalty" : 20,
+      "order" : 2,
+      "answer_required" : true,
+      "choices" : [ {
+        "text" : "kypo1",
+        "correct" : true,
+        "order" : 0
+      }, {
+        "text" : "kypo2",
+        "correct" : true,
+        "order" : 1
+      }, {
+        "text" : "kypo3",
+        "correct" : true,
+        "order" : 2
+      }, {
+        "text" : "kypo",
+        "correct" : true,
+        "order" : 3
+      } ]
+    }, {
+      "question_type" : "FFQ",
+      "text" : "Free Form 4",
+      "points" : 0,
+      "penalty" : 0,
+      "order" : 3,
+      "answer_required" : true,
+      "choices" : [ {
+        "text" : "kypo",
+        "correct" : true,
+        "order" : 0
+      } ]
+    }, {
+      "question_type" : "MCQ",
+      "text" : "Multiple Choice 1",
+      "points" : 0,
+      "penalty" : 0,
+      "order" : 4,
+      "answer_required" : true,
+      "choices" : [ {
+        "text" : "Choice 1",
+        "correct" : true,
+        "order" : 0
+      }, {
+        "text" : "Choice 2",
+        "correct" : false,
+        "order" : 1
+      }, {
+        "text" : "Choice 3",
+        "correct" : true,
+        "order" : 2
+      }, {
+        "text" : "Choice 4",
+        "correct" : false,
+        "order" : 3
+      } ]
+    }, {
+      "question_type" : "MCQ",
+      "text" : "Multiple Choice 2",
+      "points" : 20,
+      "penalty" : 0,
+      "order" : 5,
+      "answer_required" : true,
+      "choices" : [ {
+        "text" : "Choice 1",
+        "correct" : true,
+        "order" : 0
+      }, {
+        "text" : "Choice 2",
+        "correct" : false,
+        "order" : 1
+      } ]
+    }, {
+      "question_type" : "MCQ",
+      "text" : "Multiple Choice 3",
+      "points" : 0,
+      "penalty" : 20,
+      "order" : 6,
+      "answer_required" : true,
+      "choices" : [ {
+        "text" : "Choice 1",
+        "correct" : false,
+        "order" : 0
+      }, {
+        "text" : "Choice 2",
+        "correct" : true,
+        "order" : 1
+      }, {
+        "text" : "Choice 3",
+        "correct" : true,
+        "order" : 2
+      } ]
+    }, {
+      "question_type" : "MCQ",
+      "text" : "Multiple Choice 4",
+      "points" : 20,
+      "penalty" : 20,
+      "order" : 7,
+      "answer_required" : true,
+      "choices" : [ {
+        "text" : "Choice 1",
+        "correct" : true,
+        "order" : 0
+      }, {
+        "text" : "Choice 2",
+        "correct" : false,
+        "order" : 1
+      }, {
+        "text" : "Choice 3",
+        "correct" : false,
+        "order" : 2
+      }, {
+        "text" : "Choice 4",
+        "correct" : true,
+        "order" : 3
+      }, {
+        "text" : "Choice 5",
+        "correct" : true,
+        "order" : 4
+      } ]
+    }, {
+      "question_type" : "MCQ",
+      "text" : "Multiple Choice 5",
+      "points" : 20,
+      "penalty" : 30,
+      "order" : 8,
+      "answer_required" : true,
+      "choices" : [ {
+        "text" : "Choice 1",
+        "correct" : true,
+        "order" : 0
+      } ]
+    } ],
+    "instructions" : "The instructions for assessment levels can be found only at the [Linear training wiki](https://gitlab.ics.muni.cz/groups/muni-kypo-crp/-/wikis/Testing-KYPO-instance/Linear-Training).",
+    "assessment_type" : "TEST"
+  }, {
+    "title" : "Test 2",
+    "level_type" : "ASSESSMENT_LEVEL",
+    "order" : 10,
+    "estimated_duration" : 10,
+    "questions" : [ {
+      "question_type" : "EMI",
+      "text" : "Extended Matching Items 1",
+      "points" : 0,
+      "penalty" : 0,
+      "order" : 0,
+      "answer_required" : true,
+      "extended_matching_options" : [ {
+        "text" : "Option 1",
+        "order" : 0
+      }, {
+        "text" : "Option 2",
+        "order" : 1
+      } ],
+      "extended_matching_statements" : [ {
+        "text" : "Statement 1",
+        "order" : 0,
+        "correct_option_order" : 0
+      }, {
+        "text" : "Statement 2",
+        "order" : 1,
+        "correct_option_order" : 1
+      } ]
+    }, {
+      "question_type" : "EMI",
+      "text" : "Extended Matching Items 2",
+      "points" : 20,
+      "penalty" : 0,
+      "order" : 1,
+      "answer_required" : true,
+      "extended_matching_options" : [ {
+        "text" : "Option 1",
+        "order" : 0
+      }, {
+        "text" : "Option 2",
+        "order" : 1
+      }, {
+        "text" : "Option 3",
+        "order" : 2
+      } ],
+      "extended_matching_statements" : [ {
+        "text" : "Statement 1",
+        "order" : 0,
+        "correct_option_order" : 1
+      }, {
+        "text" : "Statement 2",
+        "order" : 1,
+        "correct_option_order" : 0
+      }, {
+        "text" : "Statement 3",
+        "order" : 2,
+        "correct_option_order" : 2
+      } ]
+    }, {
+      "question_type" : "EMI",
+      "text" : "Extended Matching Items 3",
+      "points" : 0,
+      "penalty" : 20,
+      "order" : 2,
+      "answer_required" : true,
+      "extended_matching_options" : [ {
+        "text" : "Option 1",
+        "order" : 0
+      }, {
+        "text" : "Option 2",
+        "order" : 1
+      }, {
+        "text" : "Option 3",
+        "order" : 2
+      }, {
+        "text" : "Option 4",
+        "order" : 3
+      } ],
+      "extended_matching_statements" : [ {
+        "text" : "Statement 1",
+        "order" : 0,
+        "correct_option_order" : 3
+      }, {
+        "text" : "Statement 2",
+        "order" : 1,
+        "correct_option_order" : 1
+      } ]
+    }, {
+      "question_type" : "EMI",
+      "text" : "Extended Matching Items 4",
+      "points" : 20,
+      "penalty" : 20,
+      "order" : 3,
+      "answer_required" : true,
+      "extended_matching_options" : [ {
+        "text" : "Option 1",
+        "order" : 0
+      }, {
+        "text" : "Option 2",
+        "order" : 1
+      } ],
+      "extended_matching_statements" : [ {
+        "text" : "Statement 1",
+        "order" : 0,
+        "correct_option_order" : 0
+      }, {
+        "text" : "Statement 2",
+        "order" : 1,
+        "correct_option_order" : 1
+      }, {
+        "text" : "Statement 3",
+        "order" : 2,
+        "correct_option_order" : 1
+      }, {
+        "text" : "Statement 4",
+        "order" : 3,
+        "correct_option_order" : 0
+      }, {
+        "text" : "Statement 5",
+        "order" : 4,
+        "correct_option_order" : 0
+      } ]
+    }, {
+      "question_type" : "EMI",
+      "text" : "Extended Matching Items 5",
+      "points" : 20,
+      "penalty" : 30,
+      "order" : 4,
+      "answer_required" : true,
+      "extended_matching_options" : [ {
+        "text" : "Option 1",
+        "order" : 0
+      } ],
+      "extended_matching_statements" : [ {
+        "text" : "Statement 1",
+        "order" : 0,
+        "correct_option_order" : 0
+      } ]
+    } ],
+    "instructions" : "The instructions for assessment levels can be found only at the [Linear training wiki](https://gitlab.ics.muni.cz/groups/muni-kypo-crp/-/wikis/Testing-KYPO-instance/Linear-Training).",
+    "assessment_type" : "TEST"
+  }, {
+    "title" : "Final info",
+    "level_type" : "INFO_LEVEL",
+    "order" : 11,
+    "estimated_duration" : 0,
+    "content" : "Once this training instance is over, archive it and check all the data (logs, events, definition, etc.), they should contain description of all the steps that were performed during this training. Also, after finishing this level, a score total will be displayed. Check that your score matches the role you are logged as:\n\n## Admin\n * 280\n\n## Instructor\n * \n\n## Trainee\n * \n"
+  } ],
+  "estimated_duration" : 34,
+  "variant_sandboxes" : false
+}

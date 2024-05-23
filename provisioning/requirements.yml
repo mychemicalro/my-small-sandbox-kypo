@@ -1,0 +1,24 @@
+- name: disable-qxl
+  src: git@gitlab.ics.muni.cz:muni-kypo/ansible-roles/disable-qxl.git
+  scm: git
+  version: 1.0.0
+
+- name: sandbox-logging-bash
+  src: https://gitlab.ics.muni.cz/muni-kypo/ansible-roles/sandbox-logging-bash.git
+  scm: git
+  version: 1.0.1
+
+- name: sandbox-logging-forward
+  src: https://gitlab.ics.muni.cz/muni-kypo/ansible-roles/sandbox-logging-forward.git
+  scm: git
+  version: 1.0.1
+
+- name: kypo-user-access
+  src: https://gitlab.ics.muni.cz/muni-kypo-crp/backend-python/ansible-networking-stage/kypo-user-access.git
+  scm: git
+  version: 1.0.0
+
+- name: hosts-aliases
+  src: https://gitlab.ics.muni.cz/muni-kypo/ansible-roles/hosts-aliases.git
+  scm: git
+  version: 1.0.0
