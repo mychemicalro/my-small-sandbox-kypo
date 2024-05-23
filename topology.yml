@@ -5,13 +5,13 @@ hosts:
     base_box:
       image: debian-9-x86_64
       mgmt_user: debian
-    flavor: csirtmu.tiny1x2
+    flavor: csirtmu.small2x8
 routers:
   - name: router
     base_box:
       image: debian-9-x86_64
       mgmt_user: debian
-    flavor: csirtmu.tiny1x2
+    flavor: csirtmu.small2x8
 
 networks:
   - name: switch
