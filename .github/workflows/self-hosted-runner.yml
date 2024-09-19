@@ -27,6 +27,7 @@ jobs:
           pwd 
           ls -lah 
           printenv
+          
           /opt/scancentral/bin/scancentral -url https://dev-sast-controller.italiaonline.it/scancentral-ctrl/ status -token 3bb70c8e-487c-4779-9dce-949d7998fbd0
           
           
