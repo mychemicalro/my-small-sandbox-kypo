@@ -1,0 +1,27 @@
+# .github/workflows/self-hosted-runner.yml
+name: CI on Self-Hosted Runner
+
+on:
+  push:
+    branches:
+      - main  # Trigger on pushes to the main branch
+  pull_request:
+    branches:
+      - main  # Trigger on pull requests to the main branch
+
+jobs:
+  build:
+    runs-on: self-hosted  # Specify that this job should run on a self-hosted runner
+
+    steps:
+      # Checkout the repository code
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Run a simple shell command (example: print environment info)
+      - name: Run a script
+        run: |
+          echo "Running on self-hosted runner"
+          uname -a
+          ls -lah 
+          
