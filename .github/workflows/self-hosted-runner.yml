@@ -28,7 +28,7 @@ jobs:
           ls -lah 
           printenv
           echo "My variable is ${{ vars.DEV_SC_CONTROLLER_URL }}"
-          /opt/scancentral/bin/scancentral -url https://dev-sast-controller.italiaonline.it/scancentral-ctrl/ status -token 3bb70c8e-487c-4779-9dce-949d7998fbd0
+          /opt/scancentral/bin/scancentral -url ${{ vars.DEV_SC_CONTROLLER_URL }} status -token 3bb70c8e-487c-4779-9dce-949d7998fbd0
         env:
           MY_ENV_VAR: ${{ vars.DEV_SC_CONTROLLER_URL }}
           
