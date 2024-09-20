@@ -22,15 +22,15 @@ jobs:
       - name: sast
         run: |
           echo "Running sast self-hosted runner"
-          uname -a
-          whoami 
-          pwd 
-          ls -lah 
-          printenv
-          echo "My variable is ${{ vars.DEV_SC_CONTROLLER_URL }}"
-          /opt/scancentral/bin/scancentral -url ${{ vars.DEV_SC_CONTROLLER_URL }} status -token 3bb70c8e-487c-4779-9dce-949d7998fbd0
-        env:
-          MY_ENV_VAR: ${{ vars.DEV_SC_CONTROLLER_URL }}
-          
+           #- /tmp/scancentral/bin/scancentral -url $DEV_SC_CONTROLLER_URL start --python-virtual-env pgclick  -upload -versionid $VERSION_ID -uptoken $SSC_UPLOAD_TOKEN -fprssc "$CI_COMMIT_SHORT_SHA.fpr" | grep "Submitted job and received" | cut -d ":" -f 2 > job-token.txt
+           #- cat job-token.txt
+           #- chmod +x /tmp/scancentral/check-scan.sh 
+           #- /tmp/scancentral/check-scan.sh $DEV_SC_CONTROLLER_URL
+
+          echo "My variable is ${{ vars.PROD_SC_CONTROLLER_URL }}" 
+          /opt/scancentral/bin/scancentral -url ${{ vars.PROD_SC_CONTROLLER_URL }} start -upload -versionid ${{ vars.VERSION_ID }} -uptoken ${{ vars.SSC_UPLOAD_TOKEN }} -fprssc "$GITHUB_SHA.fpr" 
+          #env:
+          #  MY_ENV_VAR: ${{ vars.PROD_SC_CONTROLLER_URL }}
+          #  MY_ENV_VAR2: ${{ vars.VERSION_ID }}
           
           
