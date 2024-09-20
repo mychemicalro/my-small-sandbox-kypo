@@ -22,7 +22,7 @@ jobs:
       - name: sast
         run: |
           echo "Running sast self-hosted runner"
-          /opt/scancentral/bin/scancentral -url ${{ vars.PROD_SC_CONTROLLER_URL }} start -upload -versionid ${{ vars.VERSION_ID }} -uptoken ${{ vars.SSC_UPLOAD_TOKEN }} -fprssc "$GITHUB_SHA.fpr"  | grep "Submitted job and received" | cut -d ":" -f 2 > job-token.txt
+          /opt/scancentral/bin/scancentral -url ${{ vars.PROD_SC_CONTROLLER_URL }} start -upload -versionid ${{ vars.VERSION_ID }} -uptoken ${{ vars.SSC_UPLOAD_TOKEN }} -fprssc "$GITHUB_SHA.fpr"  | grep "Submitted job and received" | cut -d ":" -f 2 > /tmp/job-token.txt
           cat job-token.txt
           /opt/scancentral/bin/check-scan.sh $PROD_SC_CONTROLLER_URL
           
