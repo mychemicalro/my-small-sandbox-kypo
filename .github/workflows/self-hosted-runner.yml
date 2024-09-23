@@ -29,7 +29,7 @@ jobs:
           /opt/scancentral/bin/scancentral -url ${{ vars.PROD_SC_CONTROLLER_URL }} start -upload -versionid ${{ vars.VERSION_ID }} -uptoken ${{ vars.SSC_UPLOAD_TOKEN }} -fprssc "$GITHUB_SHA.fpr"  | grep "Submitted job and received" | cut -d ":" -f 2 > /tmp/"$GITHUB_SHA"/job-token.txt
           cat /tmp/$GITHUB_SHA/job-token.txt
           ls -lah /tmp/$GITHUB_SHA
-          /opt/scancentral/bin/check-scan.sh "$PROD_SC_CONTROLLER_URL" "/tmp/$GITHUB_SHA/job-token.txt"
+          /opt/scancentral/bin/check-scan.sh ${{ vars.PROD_SC_CONTROLLER_URL }} "/tmp/$GITHUB_SHA/job-token.txt"
           rm -rf /tmp/$GITHUB_SHA/job-token.txt
           
 
